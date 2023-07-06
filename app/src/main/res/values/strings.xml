@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">PosterMaker</string>
+    <string name="login">Login</string>
+    <string name="select_lang">Select Language</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="select_country">Select Country</string>
+    <string name="search_your_state">Search your state…</string>
+    <string name="select_religion">Select Religion</string>
+    <string name="search_your_religion">Search your Religion…</string>
+    <string name="search_your_city">Search your city…</string>
+    <string name="search_your_country">Search your country…</string>
+    <string name="select_interest">Select Interest</string>
+    <string name="select_atleast_interest">Select at-lest 5 interest to continue</string>
+    <string name="dummy_login">Add your phone number. We’’ll send you a verification code so we know you’re real.</string>
+    <string name="continue_fb">Continue with Facebook</string>
+    <string name="continue_google">Continue with Google</string>
+    <string name="next">Next</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="upcoming_event">Upcoming Event</string>
+    <string name="event">Event</string>
+    <string name="greetings">Greetings</string>
+    <string name="motivational">Motivational</string>
+    <string name="settings">Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="family_details">Family Members &amp; Details</string>
+    <string name="business_selection">Business &amp; Frame Selection</string>
+    <string name="language">Language</string>
+    <string name="select_dob">Select Date of Birth</string>
+    <string name="select_family">Select Family Members &amp; Details</string>
+    <string name="anniversary_date">Anniversary Date</string>
+    <string name="gender"> Gender :</string>
+    <string name="premium">Premium</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="faq">FAQ</string>
+    <string name="log_out">Log out</string>
+    <string name="follow_our_social_icon">Follows Our Social Media</string>
+    <string name="upload_profile">Upload Profile</string>
+    <string name="religion">Religion</string>
+    <string name="name">Name</string>
+    <string name="number">Mobile Number</string>
+    <string name="email">Email ID</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">Save</string>
+    <string name="father_name">Father\'s Name</string>
+    <string name="mother_name">Mother\'s Name</string>
+    <string name="husband_name">Wife\'s / Husband\'s Name</string>
+    <string name="children_name">Children Name</string>
+    <string name="brother_name">Brother\'s Name</string>
+    <string name="sister_name">Sister\'s Name</string>
+    <!--AdMob Id-->
+    <string name="app_open_ads">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-2496930616276797~7069861765</string>
+    <string name="admob_banner_ad" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_native_ad" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_interstitial_ad" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="reset">Reset</string>
+    <string name="choose_frame">Choose Frame</string>
+    <string name="frame">Frame</string>
+    <string name="set_as">Set As</string>
+    <string name="oceanmtech">Oceanmtech</string>
+    <string name="business">Business</string>
+    <string name="select_profile">Select Profile</string>
+    <string name="select_cat">Select Category</string>
+    <string name="political">Political</string>
+    <string name="professional">Professional</string>
+    <string name="personal">Personal</string>
+    <string name="business_image">Business Image</string>
+    <string name="industry">Industry</string>
+    <string name="category">Category</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_tagline">Business Tagline</string>
+    <string name="business_email">Business Email ID</string>
+    <string name="business_website">Business Website</string>
+    <string name="address">Address</string>
+    <string name="landline_number">Landline Number</string>
+    <string name="select_social_media">Select Social Media</string>
+    <string name="choose_file">Choose File</string>
+    <string name="send">Send</string>
+    <string name="post">Post</string>
+    <string name="story">Story</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+
+    <string name="facebook_app_id">1252355795651464</string>
+<!--    <string name="fb_login_protocol_scheme">fb1234</string>-->
+    <string name="facebook_client_token">9ebf2d909ed4c7ec80010975ed5413c5</string>
+</resources>
+

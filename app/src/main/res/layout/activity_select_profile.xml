@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UI.DashboardModule.SettingsModule.BusinessModule.SelectProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/lay_main_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rect_bottom_30dp"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="20dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llBusiness"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="7dp"
+                        android:background="@drawable/iv_background"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/iv_circle_background"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:padding="4dp"
+                                android:src="@drawable/app_logo" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/arial_rounded_mt"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="@string/business"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAdContainerShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llPolitical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/iv_background"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp">
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/iv_circle_background"
+                                android:gravity="center">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center"
+                                    android:padding="4dp"
+                                    android:src="@drawable/app_logo" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/arial_rounded_mt"
+                                android:gravity="center"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:text="@string/political"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llProfessional"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="7dp"
+                                android:layout_toRightOf="@+id/llPolitical"
+                                android:layout_weight="1"
+                                android:background="@drawable/iv_background"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingHorizontal="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/iv_circle_background"
+                                    android:gravity="center">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:padding="4dp"
+                                        android:src="@drawable/app_logo" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/arial_rounded_mt"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="@string/professional"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/llPersonal"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_below="@+id/llProfessional"
+                                android:layout_margin="7dp"
+                                android:layout_toRightOf="@+id/llPolitical"
+                                android:layout_weight="1"
+                                android:background="@drawable/iv_background"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingHorizontal="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/iv_circle_background"
+                                    android:gravity="center">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="65dp"
+                                        android:layout_height="65dp"
+                                        android:layout_gravity="center"
+                                        android:padding="4dp"
+                                        android:src="@drawable/app_logo" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/arial_rounded_mt"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:text="@string/personal"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

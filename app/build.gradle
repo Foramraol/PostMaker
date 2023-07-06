@@ -1,0 +1,139 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    buildFeatures {
+        viewBinding true
+    }
+    dataBinding {
+        //noinspection DataBindingWithoutKapt
+        enabled = true
+    }
+    namespace 'com.ocean.postermaker'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.ocean.postermaker"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.annotation:annotation-experimental:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation project(path: ':imagepicker')
+    // jsoup HTML parser library
+    implementation 'org.jsoup:jsoup:1.15.3'
+    // For Kotlin
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    //FaceBook
+    implementation 'com.facebook.android:facebook-android-sdk:12.3.0'
+    //recyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // Kotlin Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
+    // Koin
+    implementation 'org.koin:koin-android:2.0.1'
+    implementation 'org.koin:koin-android-viewmodel:2.0.1'
+    implementation 'org.koin:koin-androidx-scope:2.0.1'
+    // Lifecycle components (LiveData, ViewModel)
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "android.arch.lifecycle:common-java8:1.1.1"
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+    implementation 'com.squareup.retrofit2:converter-simplexml:2.5.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    // CircularImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    // Lottie Animation
+    implementation 'com.airbnb.android:lottie:5.1.1'
+    // Progress Kit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    //    Video Player
+    implementation 'com.google.android.exoplayer:exoplayer:2.13.3'
+    //    permission
+    implementation "com.karumi:dexter:5.0.0"
+    //    image picker
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    //AutoFittextview
+    implementation 'me.grantland:autofittextview:0.2.1'
+    //    implementation 'com.github.AndroidDeveloperLB:AutoFitTextView:9'
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+    implementation 'com.github.kaushikthedeveloper:squarelayout:0.0.3'
+    //    android sim card number hint number
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+    implementation 'com.google.android.gms:play-services-auth:20.0.1'
+    //    reple animation
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.20'
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:29.0.4')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    //firebase
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.1'
+    //    google ads
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+    implementation 'com.loopeer.lib:shadow:0.0.4-beta3'
+    //    download image
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation "androidx.multidex:multidex:2.0.1"
+    //Color Picker
+    implementation "com.github.skydoves:colorpickerview:2.2.4"
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'
+    //Razor pay payment Gateway
+    implementation 'com.razorpay:checkout:1.6.19'
+    implementation 'com.razorpay:razorpay-java:1.0.0'
+    //
+    implementation 'com.tom-roush:pdfbox-android:2.0.24.0'
+    implementation("com.tbuonomo:dotsindicator:4.3")
+    //Shape Image View
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+}
